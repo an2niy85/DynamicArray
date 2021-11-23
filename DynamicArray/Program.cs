@@ -14,13 +14,14 @@ namespace DynamicArray
             string inputUser;
             int[]bag = new int[1];
             
-            int sumBag = 0;
-
             while (isProgress)
             {
                 inputUser = Console.ReadLine();
+                
                 if (inputUser == "sum")
                 {
+                    int sumBag = 0;
+
                     for (int i = 0; i < bag.Length; i++)
                     {
                         sumBag += bag[i];
@@ -34,6 +35,7 @@ namespace DynamicArray
                 else
                 {
                     int[] tempBag = new int[bag.Length + 1];
+                    
                     for (int i = 0; i < bag.Length; i++)
                     {
                         tempBag[i] = bag[i];
